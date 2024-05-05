@@ -155,7 +155,7 @@ function handleVietNamese(text){
     Object.entries(VN_TELEX).map(entry => {
         text = text.replaceAll(entry[0], entry[1]);
     })
-    text = text.replace("ch","_");
+    text = text.replaceAll("ch","_");
     return text;
 }
 function displayTranslated(translated){
